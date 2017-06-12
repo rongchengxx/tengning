@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="../css/pintuer.css">
+<link rel="stylesheet" href="../css/admin.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/pintuer.js"></script>
+</head>
+<body>
+<div id="listform">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 快递分区设置</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="100" style="text-align:left; padding-left:20px;">地区</th>
+        <th width="310">默认物流</th>
+        <th width="200">例外</th>
+        <th></th>
+        <th>操作</th>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+         天津</td>
+        <td>
+          <div class="button-group"> 
+            <div class="button border-main xialaBtn">
+              <span class="icon-plus"></span> 中通 
+              <ul>
+                <li>百世快递</li>
+                <li>圆通</li>
+                <li>申通</li>
+                <li>中通</li>
+                <li>韵达</li>
+                <li>顺丰</li>
+                <li>急宅送</li>
+                <li>EMS</li>
+                <li>快捷</li>
+                <li>全峰</li>
+                <li>国通</li>
+                <li>EMS经济</li>
+                <li>邮政小包</li>
+                <li>天天</li>
+                <li>优速</li>
+                <li>速尔</li>
+                <li>龙邦</li>
+                <li>德邦快递</li>
+                <li>中国邮政</li>
+                <li>京东</li>
+                <li>百世物流</li>
+                <li>自提</li>
+                <li>百世保价</li>
+                <li>安能物流</li>
+                <li>UPS</li>
+                <li>联邦快递</li>
+                <li>美国邮政</li>
+                <li>风火天地</li>
+                <li>联合快递</li>
+                <li>众焱速递</li>
+                <li>高宏铁快递</li>
+                <li>高铁快递</li>
+                <li>德邦物流</li>
+                <li>佳龙快运</li>
+                <li>邮政标准</li>
+              </ul>
+            </div> 
+            <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> 
+          </div>
+        </td>
+        <td><a class="button border-green shade_button" href="javascript:void(0)"><span class="icon-plus"></span> 添加</a></td>
+        <td><input type="text" class="input"></td>
+        <td>这是一套MUI后台精美管理系统，感谢您的支持</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+         河北</td>
+        <td>
+          <div class="button-group"> 
+            <div class="button border-main xialaBtn">
+            <span class="icon-plus"></span> 中通 
+              <ul>
+                <li>百世快递</li>
+                <li>圆通</li>
+                <li>申通</li>
+                <li>中通</li>
+                <li>韵达</li>
+                <li>顺丰</li>
+                <li>急宅送</li>
+                <li>EMS</li>
+                <li>快捷</li>
+                <li>全峰</li>
+                <li>国通</li>
+                <li>EMS经济</li>
+                <li>邮政小包</li>
+                <li>天天</li>
+                <li>优速</li>
+                <li>速尔</li>
+                <li>龙邦</li>
+                <li>德邦快递</li>
+                <li>中国邮政</li>
+                <li>京东</li>
+                <li>百世物流</li>
+                <li>自提</li>
+                <li>百世保价</li>
+                <li>安能物流</li>
+                <li>UPS</li>
+                <li>联邦快递</li>
+                <li>美国邮政</li>
+                <li>风火天地</li>
+                <li>联合快递</li>
+                <li>众焱速递</li>
+                <li>高宏铁快递</li>
+                <li>高铁快递</li>
+                <li>德邦物流</li>
+                <li>佳龙快运</li>
+                <li>邮政标准</li>
+              </ul>
+            </div> 
+            <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> 
+          </div>
+        </td>
+        <td><a class="button border-green shade_button" href="javascript:void(0)"><span class="icon-plus"></span> 添加</a></td>
+        <td><input type="text" class="input"></td>
+        <td>这是一套MUI后台精美管理系统，感谢您的支持</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+         北京</td>
+        <td>
+          <div class="button-group"> 
+            <div class="button border-main xialaBtn">
+            <span class="icon-plus"></span> 中通 
+              <ul>
+                <li>百世快递</li>
+                <li>圆通</li>
+                <li>申通</li>
+                <li>中通</li>
+                <li>韵达</li>
+                <li>顺丰</li>
+                <li>急宅送</li>
+                <li>EMS</li>
+                <li>快捷</li>
+                <li>全峰</li>
+                <li>国通</li>
+                <li>EMS经济</li>
+                <li>邮政小包</li>
+                <li>天天</li>
+                <li>优速</li>
+                <li>速尔</li>
+                <li>龙邦</li>
+                <li>德邦快递</li>
+                <li>中国邮政</li>
+                <li>京东</li>
+                <li>百世物流</li>
+                <li>自提</li>
+                <li>百世保价</li>
+                <li>安能物流</li>
+                <li>UPS</li>
+                <li>联邦快递</li>
+                <li>美国邮政</li>
+                <li>风火天地</li>
+                <li>联合快递</li>
+                <li>众焱速递</li>
+                <li>高宏铁快递</li>
+                <li>高铁快递</li>
+                <li>德邦物流</li>
+                <li>佳龙快运</li>
+                <li>邮政标准</li>
+              </ul>
+            </div> 
+            <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> 
+          </div>
+        </td>
+        <td><a class="button border-green shade_button" href="javascript:void(0)"><span class="icon-plus"></span> 添加</a></td>
+        <td><input type="text" class="input"></td>
+        <td>这是一套MUI后台精美管理系统，感谢您的支持</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+         安徽</td>
+        <td>
+          <div class="button-group"> 
+            <div class="button border-main xialaBtn">
+              <span class="icon-plus"></span> 中通 
+              <ul>
+                <li>百世快递</li>
+                <li>圆通</li>
+                <li>申通</li>
+                <li>中通</li>
+                <li>韵达</li>
+                <li>顺丰</li>
+                <li>急宅送</li>
+                <li>EMS</li>
+                <li>快捷</li>
+                <li>全峰</li>
+                <li>国通</li>
+                <li>EMS经济</li>
+                <li>邮政小包</li>
+                <li>天天</li>
+                <li>优速</li>
+                <li>速尔</li>
+                <li>龙邦</li>
+                <li>德邦快递</li>
+                <li>中国邮政</li>
+                <li>京东</li>
+                <li>百世物流</li>
+                <li>自提</li>
+                <li>百世保价</li>
+                <li>安能物流</li>
+                <li>UPS</li>
+                <li>联邦快递</li>
+                <li>美国邮政</li>
+                <li>风火天地</li>
+                <li>联合快递</li>
+                <li>众焱速递</li>
+                <li>高宏铁快递</li>
+                <li>高铁快递</li>
+                <li>德邦物流</li>
+                <li>佳龙快运</li>
+                <li>邮政标准</li>
+              </ul>
+            </div> 
+            <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> 
+          </div>
+        </td>
+        <td><a class="button border-green shade_button" href="javascript:void(0)"><span class="icon-plus"></span> 添加</a></td>
+        <td><input type="text" class="input"></td>
+        <td>这是一套MUI后台精美管理系统，感谢您的支持</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+         湖南</td>
+        <td>
+          <div class="button-group"> 
+            <div class="button border-main xialaBtn">
+              <span class="icon-plus"></span> 中通 
+              <ul>
+                <li>百世快递</li>
+                <li>圆通</li>
+                <li>申通</li>
+                <li>中通</li>
+                <li>韵达</li>
+                <li>顺丰</li>
+                <li>急宅送</li>
+                <li>EMS</li>
+                <li>快捷</li>
+                <li>全峰</li>
+                <li>国通</li>
+                <li>EMS经济</li>
+                <li>邮政小包</li>
+                <li>天天</li>
+                <li>优速</li>
+                <li>速尔</li>
+                <li>龙邦</li>
+                <li>德邦快递</li>
+                <li>中国邮政</li>
+                <li>京东</li>
+                <li>百世物流</li>
+                <li>自提</li>
+                <li>百世保价</li>
+                <li>安能物流</li>
+                <li>UPS</li>
+                <li>联邦快递</li>
+                <li>美国邮政</li>
+                <li>风火天地</li>
+                <li>联合快递</li>
+                <li>众焱速递</li>
+                <li>高宏铁快递</li>
+                <li>高铁快递</li>
+                <li>德邦物流</li>
+                <li>佳龙快运</li>
+                <li>邮政标准</li>
+              </ul>
+            </div> 
+            <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> 
+          </div>
+        </td>
+        <td><a class="button border-green shade_button" href="javascript:void(0)"><span class="icon-plus"></span> 添加</a></td>
+        <td><input type="text" class="input"></td>
+        <td>这是一套MUI后台精美管理系统，感谢您的支持</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+         湖北</td>
+        <td>
+          <div class="button-group"> 
+            <div class="button border-main xialaBtn">
+              <span class="icon-plus"></span> 中通 
+              <ul>
+                <li>百世快递</li>
+                <li>圆通</li>
+                <li>申通</li>
+                <li>中通</li>
+                <li>韵达</li>
+                <li>顺丰</li>
+                <li>急宅送</li>
+                <li>EMS</li>
+                <li>快捷</li>
+                <li>全峰</li>
+                <li>国通</li>
+                <li>EMS经济</li>
+                <li>邮政小包</li>
+                <li>天天</li>
+                <li>优速</li>
+                <li>速尔</li>
+                <li>龙邦</li>
+                <li>德邦快递</li>
+                <li>中国邮政</li>
+                <li>京东</li>
+                <li>百世物流</li>
+                <li>自提</li>
+                <li>百世保价</li>
+                <li>安能物流</li>
+                <li>UPS</li>
+                <li>联邦快递</li>
+                <li>美国邮政</li>
+                <li>风火天地</li>
+                <li>联合快递</li>
+                <li>众焱速递</li>
+                <li>高宏铁快递</li>
+                <li>高铁快递</li>
+                <li>德邦物流</li>
+                <li>佳龙快运</li>
+                <li>邮政标准</li>
+              </ul>
+            </div> 
+            <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> 
+          </div>
+        </td>
+        <td><a class="button border-green shade_button" href="javascript:;"><span class="icon-plus"></span> 添加</a></td>
+        <td><input type="text" class="input"></td>
+        <td>这是一套MUI后台精美管理系统，感谢您的支持</td>
+      </tr>
+      <tr>
+        <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall"/>
+          全选 </td>
+        <td colspan="7" style="text-align:left;padding-left:20px;">
+          <div class="button border-main xialaBtn" style="margin-left: 60px;">
+            <span class="icon-plus"></span> 批量选择快递
+            <ul>
+              <li>百世快递</li>
+              <li>圆通</li>
+              <li>申通</li>
+              <li>中通</li>
+              <li>韵达</li>
+              <li>顺丰</li>
+              <li>急宅送</li>
+              <li>EMS</li>
+              <li>快捷</li>
+              <li>全峰</li>
+              <li>国通</li>
+              <li>EMS经济</li>
+              <li>邮政小包</li>
+              <li>天天</li>
+              <li>优速</li>
+              <li>速尔</li>
+              <li>龙邦</li>
+              <li>德邦快递</li>
+              <li>中国邮政</li>
+              <li>京东</li>
+              <li>百世物流</li>
+              <li>自提</li>
+              <li>百世保价</li>
+              <li>安能物流</li>
+              <li>UPS</li>
+              <li>联邦快递</li>
+              <li>美国邮政</li>
+              <li>风火天地</li>
+              <li>联合快递</li>
+              <li>众焱速递</li>
+              <li>高宏铁快递</li>
+              <li>高铁快递</li>
+              <li>德邦物流</li>
+              <li>佳龙快运</li>
+              <li>邮政标准</li>
+            </ul>
+          </div> 
+        </td>      
+      </tr>
+      <tr>
+        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script type="text/javascript">
+
+//单个删除
+function del(id,mid,iscid){
+  if(confirm("您确定要删除吗?")){
+    
+  }
+}
+
+//全选
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+    if (this.checked) {
+      this.checked = false;
+    }
+    else {
+      this.checked = true;
+    }
+  });
+})
+
+
+</script>
+<div class="shade_wai">
+  <div class="shade_hei"></div>
+  <div class="shade_content">
+    <h2>选择地区/快递</h2>
+    <div class="shade_list">
+      <span>市：</span>
+      <select name="" id="">
+        <option value="qingxuanze">请选择</option>
+        <option value="beijingshi">北京市</option>
+      </select>
+      <span>区：</span>
+      <select name="" id="">
+        <option value="qingxuanze">请选择</option>
+        <option value="beijingshi">某某区</option>
+        <option value="beijingshi">某某区</option>
+        <option value="beijingshi">某某区</option>
+        <option value="beijingshi">某某区</option>
+        <option value="beijingshi">某某区</option>
+        <option value="beijingshi">某某区</option>
+        <option value="beijingshi">某某区</option>
+        <option value="beijingshi">某某区</option>
+      </select>
+      <span>快递：</span>
+      <select name="" id="">
+        <option value="qingxuanze">请选择</option>
+        <option value="beijingshi">中通</option>
+        <option value="beijingshi">中通</option>
+        <option value="beijingshi">中通</option>
+        <option value="beijingshi">中通</option>
+        <option value="beijingshi">中通</option>
+        <option value="beijingshi">中通</option>
+        <option value="beijingshi">中通</option>
+      </select>
+    </div>
+    <div class="panel admin-panel" style="border:none;">
+      <div class="body-content">
+        <div class="form-x">  
+          <div class="form-group form-padding">
+            <div class="label">
+              <label></label>
+            </div>
+            <div class="field">
+              <button class="button bg-main icon-check-square-o"> 提交</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

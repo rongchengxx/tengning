@@ -1,0 +1,49 @@
+
+.content-box{
+	width: 264mm;
+	height: 132mm;
+	margin-right: 200px;
+	border: 1px solid #ddd;
+	position:relative;
+}
+.left-box{
+	width: 20%;
+	height: 650px;
+	overflow: auto;
+	float: left;
+	font-size: 16px;
+	padding: 20px;
+}
+.left-box>li{
+	margin-bottom: 10px;
+}
+.panel-top{
+	height: 100px;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+}
+.content{
+	width: 80%!important;
+	height: 100%;
+	float: right;
+	border-left: 1px solid #DDD;
+	padding: 20px;
+	overflow: auto;
+}
+#del_Btn{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #666;
+	font-size: 16px;
+	text-align: center;
+	line-height: 20px;
+	position: absolute;
+}
+.field{
+	line-height: 36px;
+}
+.field>input{
+	height: 36px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title></title>  
+    <link rel="stylesheet" href="../css/pintuer.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/pintuer.js"></script>  
+</head>
+<body>
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 商品信息设置</strong></div>
+    <div class="padding border-bottom">
+      <ul class="search">
+        <li>
+          <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
+          <button type="submit" class="button border-main batch"><span class="icon-edit"></span> 批量编辑</button>
+          <button type="submit" class="button"><span class="icon-edit"></span> 批量保存</button>
+        </li>
+      </ul>
+    </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="120">商品编码</th>
+
+        <th>商品名称</th>       
+        <th>款号</th>
+        <th>商品规格</th>
+        <th>商品价格</th>
+        <th>商品品牌</th>
+        <th width="300">短标题</th>       
+      </tr>      
+        <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+            T35335779</td>
+          <td>美国专柜 Bite限量口红唇笔套</td>
+          <td>13420925611</td>
+          <td>二代亚光眼影盘础款</td>  
+           <td>￥189.00</td>
+          <td>正品LAMER海蓝之谜精华乳霜</td>
+          <td><input type="text" name="sort[1]" value="正品LAMER海蓝" style="width:150px; text-align:center; border:1px solid #ddd; padding:7px 0;" /><button type="submit" class="button"><span class="icon-edit"></span> 保存</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+           T35335779</td>
+          <td>美国专柜 Bite限量口红唇笔套</td>
+          <td>13420925611</td>
+          <td>二代亚光眼影盘基础款</td>  
+           <td>￥189.00</td>
+          <td>正品LAMER海蓝之谜精华乳霜</td>
+          <td><input type="text" name="sort[1]" value="正品LAMER海蓝" style="width:150px; text-align:center; border:1px solid #ddd; padding:7px 0;" /><button type="submit" class="button"><span class="icon-edit"></span> 保存</button></td>
+        </tr>
+          <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+           T35335779</td>
+          <td>美国专柜 Bite限量口红唇笔套</td>
+          <td>13420925611</td>
+          <td>二代亚光眼影盘基础款</td>  
+           <td>￥189.00</td>
+          <td>正品LAMER海蓝之谜精华乳霜</td>
+          <td><input type="text" name="sort[1]" value="正品LAMER海蓝" style="width:150px; text-align:center; border:1px solid #ddd; padding:7px 0;" /><button type="submit" class="button"><span class="icon-edit"></span> 保存</button></td>
+        </tr>
+          <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+            T35335779</td>
+          <td>美国专柜 Bite限量口红唇笔套</td>
+          <td>13420925611</td>
+          <td>二代亚光眼影盘基础款</td>  
+           <td>￥189.00</td>
+          <td>正品LAMER海蓝之谜精华乳霜</td>
+          <td><input type="text" name="sort[1]" value="正品LAMER海蓝" style="width:150px; text-align:center; border:1px solid #ddd; padding:7px 0;" /><button type="submit" class="button"><span class="icon-edit"></span> 保存</button></td>
+        </tr>
+          <tr>
+          <td><input type="checkbox" name="id[]" value="1" />
+            T35335779</td>
+          <td>美国专柜 Bite限量口红唇笔套</td>
+          <td>13420925611</td>
+          <td>二代亚光眼影盘基础款</td>  
+           <td>￥189.00</td>
+          <td>正品LAMER海蓝之谜精华乳霜</td>
+          <td><input type="text" name="sort[1]" value="正品LAMER海蓝" style="width:150px; text-align:center; border:1px solid #ddd; padding:7px 0;" /><button type="submit" class="button"><span class="icon-edit"></span> 保存</button></td>
+        </tr>
+      <tr>
+        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+      </tr>
+    </table>
+  </div>
+  <div class="shade_compile">
+    <div class="shade_beij">
+      
+    </div>
+    <div class="shade_content">
+      <div class="panel admin-panel" style="border:none;">
+        <div class="body-content">
+          <div class="form-x">  
+            <div class="form-group">
+              <div class="label" style="width: 20%;">
+                <label>短标题：</label>
+              </div>
+              <div class="field" style="width: 80%;">
+                <input type="text" class="input" value="" name="title"/>
+                <div class="tips"></div>
+              </div>
+            </div> 
+            <div class="form-group ">
+              <div class="label" style="width: 20%;">
+                <label></label>
+              </div>
+              <div class="field" style="width: 80%;">
+                <button class="button bg-main icon-check-square-o"> 提交</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //全选
+    $("#checkall").click(function(){ 
+      $("input[name='id[]']").each(function(){
+        if (this.checked) {
+          this.checked = false;
+        }
+        else {
+          this.checked = true;
+        }
+      });
+    })
+  </script>
+</body></html>

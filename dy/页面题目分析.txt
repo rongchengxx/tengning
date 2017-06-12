@@ -1,0 +1,33 @@
+sign.html				==》注册页面
+login.html			==》登录页面
+index.html			==》主页面
+show.html			==》首页一进去显示
+settings.html			==》信息设置侧标题
+audit.html			==》订单审核侧标题
+print.html			==》订单打印侧标题
+alert_data.html			==》商品信息弹出页面
+
+
+settings
+	storeInformation.html		==》店铺信息设置
+	storeMessage.html			==》商品信息设置
+	expressTemplate.html		==》快递面单模板
+	add_expressTemplate.html		==》添加面单模板
+	amend_expressTemplate.html	==》修改面单模板
+	invoiceTemplate.html		==》发货单模板
+	add_invoiceTemplate.html		==》添加发货单
+	amend_invoiceTemplate.html		==》修改发货单
+	ExpressPartition.html		==》快递分区
+	printer.html			==》打印机设置（暂留）
+
+
+audit
+	indent_edit.html			==》订单编辑页面
+	indent_edit_ament.html		==》修改订单页面
+	Order_review.html			==》新建订单页面
+	
+	to_print.html			==》待打印订单页面
+	have_print.html			==》已打印订单页面
+	not_refund.html			==》未付款页面
+	refund_of.html			==》退款中订单
+	

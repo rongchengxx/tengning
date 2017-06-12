@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打印</title>
+	<link rel="stylesheet" href="../css/invoiceTemplate.css">
+	<link rel="stylesheet" href="../css/pintuer.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/pintuer.js"></script>  
+</head>
+<body>
+<div class="panel admin-panel" style="margin-bottom: 20px;overflow:hidden;">
+	<div class="panel-head"><strong class="icon-reorder">添加模板</strong></div>
+    <div class="padding border-bottom">
+	    <ul class="search" style="padding-left:10px;">
+	    	<li>模板名称：</li>
+	        <li>
+	          <input type="text" placeholder="请输入模板名称" name="keywords" class="input" style="width:240px; line-height:17px;display:inline-block" />
+			</li>
+			<li>面单大小：</li>
+	        <li>
+	        	<span>宽度：</span>
+	          	<input type="text" placeholder="模板宽度" class="input broad" style="width:80px; line-height:17px;display:inline-block" />
+	          	<span>毫米</span>
+	          	<span style="margin-left: 40px;">高度：</span>
+	          	<input type="text" placeholder="模板高度" class="input tall" style="width:80px; line-height:17px;display:inline-block" />
+	          	<span>毫米</span>
+			</li>
+			<li>
+				打印机选择：
+			</li>
+			<li>
+	            <select class="input" style="width:100px;">
+	              <option value="">请选择分类</option>
+	              <option value="">打印机1</option>
+	              <option value="">打印机2</option>
+	              <option value="">打印机3</option>
+	              <option value="">打印机4</option>
+	              <option value="">打印机5</option>
+	            </select>
+			</li>
+			<li>打印位置调整：</li>
+			<li>
+				<span>上移</span>
+				<input type="text" class="input" style="width:50px; line-height:17px;display:inline-block">
+				<span>毫米</span>
+				<span style="margin-left: 40px;">下移</span>
+				<input type="text" class="input" style="width:50px; line-height:17px;display:inline-block">
+				<span>毫米</span>
+			</li>
+	    </ul>
+    </div>
+	<ul class="left-box">
+		<li class="sender" draggable="true">寄件人</li>
+		<li class="sender_postcode" draggable="true">寄件人_邮编</li>
+		<li class="sender_province" draggable="true">寄件人_省</li>
+		<li class="sender_city" draggable="true">寄件人_市</li>
+		<li class="sender_district" draggable="true">寄件人_区</li>
+		<li class="sender_address" draggable="true">寄件人_街道地址</li>
+		<li class="sender_Complete_Address" draggable="true">寄件人_完整地址</li>
+		<li class="sender_phone" draggable="true">寄件人_电话</li>
+		<li class="sender_cellphone" draggable="true">寄件人_手机</li>
+		<li class="sender_phonebox" draggable="true">寄件人_手机/电话</li>
+		<li class="sender_firm" draggable="true">寄件人_公司</li>
+		<li class="Seller_shop_name" draggable="true">卖家_店铺名称</li>
+		<li class="Logistics_number" draggable="true">物流编号</li>
+		<li class="collecting_loans" draggable="true">代收货款</li>
+		<li class="collecting_loans_big" draggable="true">代收货款大写</li>
+		<li class="product_type" draggable="true">产品类型</li>
+		<li class="recipients" draggable="true">收件人</li>
+		<li class="recipients_ID" draggable="true">收件人_ID</li>
+		<li class="Seller_ID" draggable="true">卖家_ID</li>
+		<li class="recipients_postcode" draggable="true">收件人_邮编</li>
+		<li class="recipients_province" draggable="true">收件人_省</li>
+		<li class="recipients_city" draggable="true">收件人_市</li>
+		<li class="recipients_district" draggable="true">收件人_区</li>
+		<li class="recipients_Province" draggable="true">收件人_省市区</li>
+		<li class="recipients_address" draggable="true">收件人_街道地址</li>
+		<li class="recipients_Complete_Address" draggable="true">收件人_完整地址</li>
+		<li class="recipients_phone" draggable="true">收件人_电话</li>
+		<li class="recipients_cellphone" draggable="true">收件人_手机</li>
+		<li class="recipients_phonebox" draggable="true">收件人_手机/电话</li>
+		<li class="merchandise_news" draggable="true">商品信息</li>
+		<li class="merchandise_number" draggable="true">商品数量合计</li>
+		<li class="waybill_number" draggable="true">运单号</li>
+		<li class="parcel_sequence" draggable="true">包裹序列</li>
+		<li class="indent_number_code" draggable="true">订单号条形码</li>
+		<li class="waybill_number_code" draggable="true">运单号条形码</li>
+		<li class="sf_number_code" draggable="true">顺丰运单号条形码（电子）</li>
+		<li class="parcel_number_code" draggable="true">包裹号条形码</li>
+		<li class="destination_number_code" draggable="true">目的地条形码</li>
+		<li class="waybill_QR_code" draggable="true">运单号二维码</li>
+		<li class="shop_QR_code" draggable="true">店铺二维码</li>
+		<li class="custom_QR_code" draggable="true">自定义二维码</li>
+		<li class="custom_picture" draggable="true">自定义图片</li>
+		<li class="sf_Monthly_number" draggable="true">顺丰月结卡号</li>
+		<li class="sf_delivery_payment" draggable="true">顺丰快递付款</li>
+		<li class="Shipping_mark" draggable="true">运输标识</li>
+		<li class="COD_mark" draggable="true">COD标识</li>
+		<li class="total_amount" draggable="true">金额合计</li>
+		<li class="marker" draggable="true">大头笔</li>
+		<li class="starting_station" draggable="true">始发站</li>
+		<li class="destination" draggable="true">目的地</li>
+		<li class="end_coding" draggable="true">末端分拣编码</li>
+		<li class="Set_package_coding" draggable="true">集包编码</li>
+		<li class="Set_package_name" draggable="true">集包名称</li>
+		<li class="order_number" draggable="true">订单编号</li>
+		<li class="original_number" draggable="true">原始单号</li>
+		<li class="seller_cheat" draggable="true">卖家备忘</li>
+		<li class="Buyers_cheat" draggable="true">买家备注</li>
+		<li class="printing_date" draggable="true">打印日期</li>
+		<li class="Date_month_year" draggable="true">当天日期</li>
+		<li class="Payment_Time" draggable="true">付款时间</li>
+		<li class="invoice_title" draggable="true">发票抬头</li>
+		<li class="details_invoice" draggable="true">发票明细</li>
+		<li class="invoice_box" draggable="true">发票抬头+明细</li>
+		<li class="serial_number" draggable="true">批次流水号</li>
+		<li class="Custom_Content" draggable="true">自定义内容</li>
+		<li class="striping" draggable="true">横线</li>
+		<li class="long_string" draggable="true">竖线</li>
+		<li class="counter" draggable="true">√</li>
+	</ul>
+	<div class="content">
+		<div class="content-box" style="background:url(../images/abc.png)no-repeat;">
+			
+		</div>
+		<div class="panel admin-panel" style="border:none;">
+		    <div class="body-content">
+			     <div class="form-x">  
+			        <div class="form-group">
+			          	<div class="field">
+			            	<button class="button bg-main icon-check-square-o"> 提交</button>
+			          	</div>
+			        </div>
+		      	</div>
+		    </div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="../js/invoiceTemplate.js"></script>
+</html>
