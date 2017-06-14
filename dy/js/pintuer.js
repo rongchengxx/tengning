@@ -542,7 +542,6 @@ $(function(){
 			
 		},true)
 	};
-	console.log($(".erzi"))
 	$(".erzi").on("click",function(e){
 		e.stopPropagation()
 	})
@@ -556,5 +555,23 @@ $(function(){
 	$(".shade_tij").click(function(){
 		$(".shade_shezhi").css("display","none");
 	})
+
+	// 商品信息设置更改短标题内容
+	var shade_compile_text=$(".shade_compile_text");
+	var shade_compile_button=$(".shade_compile_button");
+	shade_compile_button.click(function(){
+		var check_coding=$(".check_coding:checked");
+		var aa=shade_compile_text.val();
+		check_coding.each(function(){
+			check_coding.parent().parent().children("td:last-child").children(".input_coding").val(aa);
+		});
+		$(".shade_compile").css("display","none");
+		
+	})
+	// console.log(check_coding)
+	// console.log(check_coding.attr("checked",true));
+
+
+
 
 })
