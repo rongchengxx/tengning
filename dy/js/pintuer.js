@@ -499,6 +499,7 @@ $(function(){
 		});
 
 	});
+	
 	// 快递面单模板遮罩
 	$(".shade_btn").click(function(){
 		$(".shade").css("display","block");
@@ -506,6 +507,7 @@ $(function(){
 	$(".shade_box").click(function(){
 		$(".shade").css("display","none");
 	})
+
 	// 快递分区遮罩
 	$(".shade_button").click(function(){
 		$(".shade_wai").css("display","block");
@@ -513,6 +515,7 @@ $(function(){
 	$(".shade_hei").click(function(){
 		$(".shade_wai").css("display","none");
 	})
+
 	//商品信息设置遮罩
 	$(".batch").click(function(){
 		$(".shade_compile").css("display","block");
@@ -545,6 +548,7 @@ $(function(){
 	$(".erzi").on("click",function(e){
 		e.stopPropagation()
 	})
+
 	// 订单编辑设置遮罩
 	$(".btn_shezhi").click(function(){
 		$(".shade_shezhi").css("display","block");
@@ -568,8 +572,7 @@ $(function(){
 		$(".shade_compile").css("display","none");
 		
 	})
-	// console.log(check_coding)
-	// console.log(check_coding.attr("checked",true));
+
 
 
 
